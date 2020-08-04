@@ -17,6 +17,7 @@ public class Answer4Tests {
 
     @Test
     public void test4(){
+    	
 		assertTrue(NumberSumLength.checkNumberPowerLength(1));
 		assertFalse(NumberSumLength.checkNumberPowerLength(10));
 		assertTrue(NumberSumLength.checkNumberPowerLength(153));

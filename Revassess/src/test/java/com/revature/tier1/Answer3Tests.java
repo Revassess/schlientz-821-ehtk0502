@@ -19,13 +19,16 @@ public class Answer3Tests {
     @Test
     public void test3() {
         int[] arr = { 1, 2, 3 };
+        
         assertNotEquals(0, SumOverArray.IterateAndSum(arr));
+        
         try {
             SumOverArray.IterateAndSum(null);
             assertTrue(true);
         } catch (NullPointerException e) {
             fail();
         }
+        
         int [] arr2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
         assertEquals(78, SumOverArray.IterateAndSum(arr2));
         int[] arr3 = { -1, -2, -3, -4, -5, -6, -7, -8, -9 };
