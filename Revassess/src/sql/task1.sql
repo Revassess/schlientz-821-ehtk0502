@@ -1,0 +1,4 @@
+CREATE SEQUENCE m_sequence
+    MINVALUE 6
+    START WITH 6
+    INCREMENT BY 3;
