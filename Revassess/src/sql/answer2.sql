@@ -1,0 +1,1 @@
+INSERT INTO APP_USER VALUES ('1234', 'Alice123', 'password', 'ALice', 'Prince', 4);

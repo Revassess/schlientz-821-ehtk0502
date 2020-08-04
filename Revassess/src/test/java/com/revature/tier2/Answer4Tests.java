@@ -37,6 +37,7 @@ public class Answer4Tests {
         try (Session sess = TestConfiguration.getSessionFactory().openSession()) {
             Transaction tx = sess.beginTransaction();
             List<UserProblem4> users = sess.createNativeQuery(answer4Contents, UserProblem4.class).list();
+            System.out.println(users.size());
             assertEquals(9, users.size());
             tx.rollback();
             PointsTests.addPoints(40);
